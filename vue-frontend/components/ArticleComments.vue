@@ -20,7 +20,7 @@
 
 <script>
 import Spinner1 from '~/components/Spinner1'
-import VueDisqus from 'vue-disqus/VueDisqus.vue'
+import VueDisqus from 'vue-disqus/dist/vue-disqus'
 
 export default {
   props: {
