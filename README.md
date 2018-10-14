@@ -48,9 +48,24 @@ manual sql dump:
 ===================
 docker exec mysql sh -c 'exec mysqldump wordpress -u wordpress -p"wordpress"' > /var/lib/mysql/wordpress.sql
 
-npm react init:
+npm vue:
 =================
 
-* goto frontend-react folder
-* npm install
-* npm start (launch server @localhost:3000)
+* goto frontend-vue folder
+``` bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:52000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# build for production and view the bundle analyzer report
+$ npm run analyze
+
+# generate static project
+$ npm run generate
+```
