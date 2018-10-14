@@ -11,7 +11,8 @@
     "vue-disqus": "^2.0.4",
     "vue-infinite-loading": "^2.2.3",
     "vue-scrollto": "^2.8.0",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "vue-router": "^3.0.1"
   },
   "config": {
     "nuxt": {
@@ -46,11 +47,13 @@
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "node-sass": "^4.9.3",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "less":"^3.8.1",
+    "less-loader": "^4.1.0",
+    "node-vibrant": "^3.0.0"
   },
   "_unusedDeps": {
     "dependencies": {
-      "vue-router": "^3.0.1"
     },
     "devDependencies": {
       "babel-eslint": "^8.2.1",
@@ -61,10 +64,7 @@
       "eslint-plugin-import": "^2.8.0",
       "eslint-plugin-node": "^5.2.1",
       "eslint-plugin-promise": "^3.6.0",
-      "eslint-plugin-standard": "^3.0.1",
-      "less": "^2.7.3",
-      "less-loader": "^4.0.5",
-      "node-vibrant": "^3.0.0"
+      "eslint-plugin-standard": "^3.0.1"
     }
   }
 }
