@@ -3,7 +3,7 @@
 # Set the docker container name:
 curDir=${PWD##*/}
 curDir=${curDir,,}
-curServiceName="_web1"
+curServiceName="_web1_1"
 container=$curDir$curServiceName
 # echo "Conatiner Name: $container"
 
