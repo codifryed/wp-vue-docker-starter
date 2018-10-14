@@ -6,23 +6,23 @@
         :hero-article="heroArticle"
       />
       <ArticleList :articles="$store.state.articles"/>
-      <InfiniteLoading
-        v-if="indexInfiniteLoading.enabled"
-        ref="infiniteLoading"
-        :on-infinite="moreArticles"
-      >
-        <span slot="spinner">
-          <Spinner1/>
-        </span>
-        <span slot="no-results">
-          <Smile/>
-          <div>No more articles!</div>
-        </span>
-        <span slot="no-more">
-          <Smile/>
-          <div>No more articles!</div>
-        </span>
-      </InfiniteLoading>
+      <!--<InfiniteLoading-->
+        <!--v-if="indexInfiniteLoading.enabled"-->
+        <!--ref="infiniteLoading"-->
+        <!--:on-infinite="moreArticles"-->
+      <!--&gt;-->
+        <!--<span slot="spinner">-->
+          <!--<Spinner1/>-->
+        <!--</span>-->
+        <!--<span slot="no-results">-->
+          <!--<Smile/>-->
+          <!--<div>No more articles!</div>-->
+        <!--</span>-->
+        <!--<span slot="no-more">-->
+          <!--<Smile/>-->
+          <!--<div>No more articles!</div>-->
+        <!--</span>-->
+      <!--</InfiniteLoading>-->
     </div>
     <TheSidebar :featured-articles="$store.state.featuredArticles"/>
   </div>
@@ -32,7 +32,8 @@
 import ArticleList from '~/components/ArticleList'
 import TheHero from '~/components/TheHero'
 import TheSidebar from '~/components/TheSidebar'
-import InfiniteLoading from 'vue-infinite-loading/src/components/InfiniteLoading.vue'
+// import InfiniteLoading from 'vue-infinite-loading/src/components/InfiniteLoading.vue'
+//import InfiniteLoading from 'vue-infinite-loading'
 import Smile from '~/assets/svg/Smile.vue'
 import Spinner1 from '~/components/Spinner1.vue'
 
@@ -53,7 +54,7 @@ export default {
     ArticleList,
     TheHero,
     TheSidebar,
-    InfiniteLoading,
+    //InfiniteLoading,
     Smile,
     Spinner1
   },
