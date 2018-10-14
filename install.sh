@@ -3,7 +3,7 @@
 # Set the docker container name:
 curDir=${PWD##*/}
 curDir=${curDir,,}
-curServiceName="_web-init1_1"
+curServiceName="_web1"
 container=$curDir$curServiceName
 # echo "Conatiner Name: $container"
 
@@ -14,7 +14,7 @@ docker-compose up -d --build
 cp -r Docker-wordpress/headless-wp data/wp-content/themes/
 
 # Pause to finish installation manually (annoying I know)
-read -n1 -r -p "Please open the site in your brower at http://localhost:8080/ and finish the installation. Press any key when finished to continue..." key
+read -n1 -r -p "Please open the site in your browser at http://localhost:8080/ and finish the installation. Press any key when finished to continue..." key
 
 # run wp-cli on installed wordpress image to install plugins, settings & activate theme
 wp="docker exec -it $container wp --allow-root"
