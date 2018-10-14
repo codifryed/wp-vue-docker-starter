@@ -1,0 +1,8 @@
+FROM wordpress:php7.2-apache
+# change internal userid to match local user's id, so that we can easy edit files locally.
+RUN usermod -u 1000 www-data
+COPY ./headless-wp-theme /var/www/html/wp-content/themes/
+# wp-cli install
+RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && \
+chmod +x wp-cli.phar && \
+mv wp-cli.phar /usr/local/bin/wp
