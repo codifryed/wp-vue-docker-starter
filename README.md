@@ -5,7 +5,7 @@ A starting point using docker-compose and a basic theme for vue integration.
 
 ## Instructions:
 
-####Install docker:
+##Install docker:
 
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
@@ -19,8 +19,10 @@ sudo systemctl status docker
 
 sudo usermod -aG docker ${USER}
 (log out and back in again)
+
 ---
-####install docker-compose (small exec)
+
+##install docker-compose (small exec)
 here: https://github.com/docker/compose/releases
 
 sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
@@ -56,13 +58,15 @@ usermod -u 1000 www-data  ( * currently added to dockerfile aka no more need)
 
 alias for wp-cli:<br/>
 alias wp='docker exec -it web_init1 wp'
+
 ---
-###manual sql dump:
+
+#manual sql dump:
 docker exec mysql sh -c 'exec mysqldump wordpress -u wordpress -p"wordpress"' > /var/lib/mysql/wordpress.sql
 
 ---
 
-###npm vue:
+##npm vue:
 
 * goto frontend-vue folder
 ``` bash
