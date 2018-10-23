@@ -6,6 +6,7 @@ A starting point using docker-compose and a basic theme for vue integration.
 ## Instructions:
 
 ####Install docker:
+
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
