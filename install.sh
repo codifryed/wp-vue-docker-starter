@@ -52,7 +52,7 @@ $wp plugin install advanced-custom-fields --activate
 $wp plugin install acf-to-rest-api --activate
 $wp plugin install custom-post-type-ui --activate
 $wp plugin install wp-rest-api-v2-menus --activate
-#$wp plugin install wordpress-seo --activate
+$wp plugin install wordpress-seo --activate
 ## For when we want to utilize the GraphQL api -- check for updates
 #$wp plugin install https://github.com/wp-graphql/wp-graphql/archive/v0.0.33.zip --activate
 ## Gutenburg is coming:
