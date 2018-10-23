@@ -1,6 +1,6 @@
-# wp-react-docker-starter
+# wp-vue-docker-starter
 
-A starting point using docker-compose and a basic theme for react integration.
+A starting point using docker-compose and a basic theme for vue integration.
 
 
 ## Instructions:
